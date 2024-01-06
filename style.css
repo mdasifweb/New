@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap");
+/*   font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;    */
+
+/*Basic CSS*/
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: #646464;
+}
+h1 h2 h3 h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #212121;
+}
+
+/*Header area CSS*/
+.header-area {
+  padding: 30px 0;
+}
+.header-area .nav-item {
+  margin-left: 30px;
+}
+.header-area .nav-link {
+  text-transform: uppercase;
+  color: #111111;
+  font-weight: 600;
+}
+.header-area .nav-link.active {
+  color: #646464;
+}
+.header-area .nav-item:last-child {
+  margin-left: 45px;
+}
+.header-area .nav-item:last-child .nav-link {
+  background-color: #caa892;
+  border-radius: 15px 0px;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 10px 20px;
+}
+
+/*Responsive CSS*/
+@media (max-width: 991px) {
+  /*Header Responsive*/
+  .header-area .nav-item {
+    margin-left: 0px;
+  }
+  .header-area .nav-item:last-child {
+    text-align: center;
+    margin-left: 0px;
+  }
+}
