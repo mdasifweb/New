@@ -18,6 +18,35 @@ h4 {
   font-weight: 500;
   color: #212121;
 }
+.theme-button {
+  text-decoration: none;
+  background-color: #37806b;
+  border-radius: 15px 0px;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  transition: 0.3s;
+  display: inline-block;
+}
+.theme-button:hover {
+  background-color: #caa892;
+  color: #fff;
+}
+.design-image {
+  position: relative;
+  z-index: 1;
+}
+.design-image::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: 20px;
+  top: 20px;
+  z-index: -1;
+  border-radius: 140px 0px;
+  border: 2px solid #b0855b;
+}
 
 /*Header area CSS*/
 .header-area {
@@ -44,6 +73,28 @@ h4 {
   text-transform: capitalize;
   padding: 10px 20px;
 }
+/*Hero area CSS*/
+.hero-area {
+  padding: 70px 0;
+}
+.hero-text h3 {
+  font-size: 20px;
+  color: #646464;
+  text-transform: uppercase;
+}
+.hero-text h2 {
+  font-size: 72px;
+  color: #212121;
+  text-transform: capitalize;
+}
+.hero-text a {
+  margin-top: 15px;
+}
+.hero-image img {
+  width: 100%;
+  border-radius: 140px 0px;
+}
+
 /*Footer-top area CSS*/
 .footer-area {
   background-color: #f8f8f8;
@@ -136,6 +187,18 @@ h4 {
   .footer-link {
     margin: 40px 0;
   }
+  /*Hero area Responsive*/
+  .hero-text {
+    text-align: center;
+  }
+  .hero-text h2 {
+    font-size: 37px;
+    margin-bottom: 7px;
+  }
+  .hero-area .theme-button {
+    margin-bottom: 30px;
+  }
+
   /*Footer-bottom area Responsive*/
   .footer-bottom {
     border-top: none;
