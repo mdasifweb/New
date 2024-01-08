@@ -95,6 +95,81 @@
           </div>
         </div>
       </section>
+
+      <section class="service-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="section-heading">
+                <h4>WHAT WE DO</h4>
+                <h3>Our Service</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="all-services owl-carousel">
+                <div class="singel-service-area px-3 py-4">
+                  <div class="singel-service">
+                    <div class="service-image me-4">
+                      <img src="assest/img/id.png.png" alt="" />
+                    </div>
+                    <div class="service-text">
+                      <h3>Interior Design</h3>
+                      <p>
+                        Lorem ipsum dolor amet consectetur adipiscing elit sed
+                        eiusmod tempor incididunt ut labore.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="singel-service-area px-3 py-4">
+                  <div class="singel-service">
+                    <div class="service-image me-4">
+                      <img src="assest/img/p.png.png" alt="" />
+                    </div>
+                    <div class="service-text">
+                      <h3>Architecture</h3>
+                      <p>
+                        Lorem ipsum dolor amet consectetur adipiscing elit sed
+                        eiusmod tempor incididunt ut labore.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="singel-service-area px-3 py-4">
+                  <div class="singel-service">
+                    <div class="service-image me-4">
+                      <img src="assest/img/id.png.png" alt="" />
+                    </div>
+                    <div class="service-text">
+                      <h3>Planning</h3>
+                      <p>
+                        Lorem ipsum dolor amet consectetur adipiscing elit sed
+                        eiusmod tempor incididunt ut labore.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="singel-service-area px-3 py-4">
+                  <div class="singel-service">
+                    <div class="service-image me-4">
+                      <img src="assest/img/id.png.png" alt="" />
+                    </div>
+                    <div class="service-text">
+                      <h3>Interior Design</h3>
+                      <p>
+                        Lorem ipsum dolor amet consectetur adipiscing elit sed
+                        eiusmod tempor incididunt ut labore.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer-area">
@@ -199,7 +274,24 @@
     <!--.owl-carousel-->
     <script>
       $(document).ready(function () {
-        $(".owl-carousel").owlCarousel();
+        $(".all-services ").owlCarousel({
+          loop: true,
+          margin: 2,
+          nav: true,
+          dots: false,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 1,
+            },
+            1000: {
+              items: 3,
+            },
+          },
+        });
       });
     </script>
   </body>
