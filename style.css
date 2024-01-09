@@ -197,6 +197,74 @@ h4 {
 .success-area .theme-button {
   margin-top: 30px;
 }
+/*Work area CSS*/
+.work-area {
+  padding: 100px 0;
+  background-color: #f8f8f8;
+}
+.all-work {
+  margin-top: 100px;
+}
+.singel-work {
+  display: flex;
+  justify-content: center;
+}
+.singel-work-text {
+  border-radius: 40px 0px;
+  background: #fff;
+  box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+.singel-work-text::after {
+  position: absolute;
+  content: "";
+  height: 100px;
+  width: 65px;
+  border-top: 2px solid #e0e0e0;
+  border-right: 2px solid #e0e0e0;
+  z-index: -1;
+  right: -65px;
+  top: 100px;
+}
+.singel-work-text.special::after {
+  left: -65px;
+  top: 100px;
+  border-right: none;
+}
+.singel-work-two .singel-work-text::before {
+  position: absolute;
+  content: "";
+  height: 100px;
+  width: 65px;
+  border-top: 2px solid #e0e0e0;
+  z-index: -1;
+  right: -65px;
+  top: 100px;
+}
+.singel-work-three .singel-work-text::before {
+  position: absolute;
+  content: "";
+  height: 100px;
+  width: 65px;
+  border-top: 2px solid #e0e0e0;
+  border-left: 2px solid #e0e0e0;
+  z-index: -1;
+  left: -65px;
+  top: 100px;
+}
+.singel-work-text h3 {
+  font-size: 50px;
+}
+.special {
+  margin-top: 100px;
+}
 
 /*Footer-top area CSS*/
 .footer-area {
@@ -280,16 +348,6 @@ h4 {
     text-align: center;
     margin-left: 0px;
   }
-  /*Footer-top area Responsive*/
-  .footer-top {
-    text-align: center;
-  }
-  .footer-about {
-    margin-bottom: 40px;
-  }
-  .footer-link {
-    margin: 40px 0;
-  }
   /*Hero area Responsive*/
   .hero-text {
     text-align: center;
@@ -322,15 +380,26 @@ h4 {
   .about-text {
     text-align: center;
   }
-  .section-heading-one {
+  .about-text h4 {
     margin-top: 40px;
   }
-  .section-heading .theme-button {
-    margin-top: 15px;
+  .about-area .theme-button {
+    margin-top: 31px;
   }
+
   /*Success area Responsive*/
   .success-text {
     text-align: center;
+  }
+  /*Work area Responsive*/
+  .singel-work-text::after {
+    border: none;
+  }
+  .singel-work-two .singel-work-text::before {
+    border: none;
+  }
+  .singel-work-three .singel-work-text::before {
+    border: none;
   }
 
   /*Footer-top area Responsive*/
