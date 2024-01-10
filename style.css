@@ -265,6 +265,83 @@ h4 {
 .special {
   margin-top: 100px;
 }
+/*Testimonial area CSS*/
+.testimonial-area {
+  padding: 100px 0;
+  position: relative;
+}
+.all-testimonial {
+  position: relative;
+  margin-top: 70px;
+}
+.singel-testimonial {
+  padding: 20px;
+}
+.testimonial-content {
+  display: flex;
+  padding: 40px;
+  position: relative;
+  z-index: 1;
+  padding-left: 0;
+}
+.testimonial-content::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 40px;
+  z-index: -1;
+  border-radius: 70px 0px;
+  background: #fff;
+  box-shadow: 5px 5px 15px 5px rgba(66, 96, 84, 0.15);
+}
+.testimonial-image {
+  margin-right: 20px;
+}
+.testimonial-image img {
+  width: 130px !important;
+  height: 130px;
+}
+.testimonial-text h3 {
+  font-size: 24px;
+}
+.testimonial-text h3 span {
+  font-size: 16px;
+  color: #646464;
+}
+.icon-img {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+}
+.icon-img img {
+  width: 25px;
+  height: auto;
+}
+.testimonial-area .owl-nav {
+  position: absolute;
+  right: 0;
+  top: -80px;
+}
+.testimonial-area .owl-nav span {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  color: #646464;
+  background-color: #fff;
+  border-radius: 50%;
+  border-radius: 30px;
+  box-shadow: -1px 3px 10px 0px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+.testimonial-area .owl-nav span:hover {
+  background-color: #37806b;
+  color: #fff;
+}
+.testimonial-area .owl-next {
+  margin-left: 15px;
+}
 
 /*Footer-top area CSS*/
 .footer-area {
@@ -400,6 +477,45 @@ h4 {
   }
   .singel-work-three .singel-work-text::before {
     border: none;
+  }
+  /*Testimonial area Responsive*/
+  .testimonial-area .owl-nav {
+    position: initial;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .all-testimonial {
+    margin-top: 0;
+  }
+  .icon-img {
+    right: 25px;
+    top: 25px;
+  }
+  .icon-img img {
+    width: 40px !important;
+    height: auto;
+  }
+  .testimonial-text h3 span {
+    font-size: 14px;
+  }
+  .testimonial-text h3 {
+    font-size: 23px;
+  }
+  .testimonial-image img {
+    width: 100px !important;
+    height: 100px;
+  }
+  .testimonial-image {
+    margin-right: 20px;
+  }
+
+  .testimonial-content {
+    display: flex;
+    padding: 35px;
+    position: relative;
+    z-index: 1;
+    padding-left: 0;
+    padding-bottom: 15px;
   }
 
   /*Footer-top area Responsive*/
