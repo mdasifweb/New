@@ -360,6 +360,46 @@ h4 {
 .blog-image {
   margin-right: 90px !important;
 }
+/*sign area CSS*/
+.signup-area {
+  padding: 180px 0;
+}
+.signup-text h3 {
+  font-size: 48px;
+  margin-bottom: 22px;
+  padding-bottom: 22px;
+  position: relative;
+}
+.signup-text h3::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 400px;
+  background-color: #c4c4c4;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.signup-text p {
+  margin-bottom: 45px;
+}
+.signup-area .form-control {
+  background-color: #eeeeee;
+  border: none;
+  font-size: 20px;
+  border-radius: 20px 0 0 0;
+  padding: 10px 15px;
+}
+.signup-area button {
+  border: none;
+  background-color: #37806b;
+  padding: 10px 40px;
+  color: #fff;
+  border-radius: 0 0 20px 0;
+}
+.signup-area button:hover {
+  background-color: #b0855b;
+}
 
 /*Footer-top area CSS*/
 .footer-area {
@@ -435,6 +475,27 @@ h4 {
 
 /*Responsive CSS*/
 @media (max-width: 991px) {
+  .design-image {
+    padding-right: 20px;
+  }
+  .design-image::after {
+    left: 20px;
+    right: 0;
+    top: 20px;
+    bottom: -20px;
+  }
+  .design-image-two {
+    padding-right: 20px;
+  }
+  .design-image-two::after {
+    left: 20px;
+    right: 0;
+    top: 20px;
+    bottom: -20px;
+    width: inherit;
+    height: inherit;
+  }
+
   /*Header Responsive*/
   .header-area .nav-item {
     margin-left: 0px;
@@ -448,7 +509,7 @@ h4 {
     text-align: center;
   }
   .hero-text h2 {
-    font-size: 37px;
+    font-size: 37px !important;
     margin-bottom: 7px;
   }
   .hero-area .theme-button {
@@ -461,7 +522,7 @@ h4 {
   }
   .service-area .section-heading h3 {
     margin-bottom: 20px;
-    font-size: 37px;
+    font-size: 37px !important;
   }
   .service-area .owl-nav {
     position: initial;
@@ -572,6 +633,11 @@ h4 {
   .one {
     margin-bottom: 70px;
   }
+  /*sign area Responsive*/
+  .signup-area .signup-text h3 {
+    margin-bottom: 20px;
+    font-size: 37px;
+  }
 
   /*Footer-top area Responsive*/
   .footer-top {
@@ -590,5 +656,40 @@ h4 {
   .footer-bottom-text {
     padding: 32px 0;
     border-top: 1px solid #c4c4c4;
+  }
+}
+
+@media (max-width: 1399px) {
+  .header-area {
+    font-size: 10px !important;
+  }
+  .hero-text h2 {
+    font-size: 40px;
+  }
+  .service-area .section-heading h3 {
+    font-size: 40px;
+  }
+  .singel-work-two .singel-work-text::before {
+    border: none !important;
+  }
+  .singel-work-three .singel-work-text::before {
+    border: none !important;
+  }
+  .singel-work-text.special::after {
+    border: none !important;
+  }
+  .singel-work-text {
+    border: none;
+  }
+  .singel-work-text::after {
+    border: none;
+  }
+}
+@media (max-width: 1299px) {
+  .header-area {
+    font-size: 15px !important;
+  }
+  .header-area .nav-link {
+    padding: 10px 14px !important;
   }
 }
